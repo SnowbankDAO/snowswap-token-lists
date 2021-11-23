@@ -22,7 +22,8 @@
     "build": "tsdx build",
     "test": "tsdx test",
     "lint": "tsdx lint",
-    "prepublishOnly": "tsdx test && tsdx build"
+    "prepublishOnly": "tsdx test && tsdx build",
+    "postinstall": "tsdx build"
   },
   "peerDependencies": {},
   "husky": {
@@ -37,7 +38,7 @@
     "trailingComma": "es5"
   },
   "module": "dist/token-lists.esm.js",
-  "devDependencies": {
+  "dependencies": {
     "ajv": "^6.12.2",
     "husky": "^4.2.5",
     "tsdx": "^0.14.0",
